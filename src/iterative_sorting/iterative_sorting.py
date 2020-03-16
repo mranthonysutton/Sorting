@@ -26,17 +26,26 @@ def selection_sort(arr):
     return arr
 
 
-print(selection_sort(arr1))
-
 # TO-DO:  implement the Bubble Sort function below
 
 
 def bubble_sort(arr):
+    array_length = len(arr)
 
+    # loops through the aray
+    for i in range(array_length):
+        # Creates another loop that will compare the two indexes
+        # of i and j and returns them in order from small to large
+        for j in range(array_length - 1):
+            if arr[i] < arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
     return arr
 
 
+print(bubble_sort(arr1))
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
