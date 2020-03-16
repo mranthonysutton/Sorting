@@ -11,11 +11,16 @@ def selection_sort(arr):
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
 
+        # Loops through the array again and checks for the
+        # smallest index. If the current index is greater than the smaller
+        # index. sets the new smaller index of the index of the array
         for j in range(smallest_index + 1, len(arr)):
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
 
         # TO-DO: swap
+        # Because the current index is set when it starts to iterate
+        # We want to swap the smallest with the current
         arr[cur_index], arr[smallest_index] = \
             arr[smallest_index], arr[cur_index]
     return arr
